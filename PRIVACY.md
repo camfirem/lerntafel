@@ -16,7 +16,8 @@ Mark Friedrichs is the sole developer and responsible party (data controller und
 
 ## What leaves your computer
 
-- **Without the AI chat, or with a local Ollama model:** nothing leaves your computer. Lerntafel makes no network calls of its own for its core features.
+- **Without the AI chat, or with a local Ollama model:** your boards, documents and messages never leave your computer. The only network call Lerntafel makes on its own is the update check described below.
+- **Update check (since 0.9.6):** at most once a day when the app starts, and whenever you choose *Help → Check for updates*, Lerntafel downloads the public list of releases of this repository from GitHub (`api.github.com`). The request contains no board content, no settings and no personal data, only the usual technical data of a web request (your IP address and the app name and version, e.g. `Lerntafel/0.9.6`). GitHub processes it under its own privacy statement: <https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement>. The developer does not receive or log these requests.
 - **With the AI chat and a cloud provider (Anthropic or OpenAI, using your own API key):** the visible part of your board, your typed message and the recent chat context are sent to that provider's servers to generate a response. That provider then processes this data under **its own** privacy policy and terms, not Lerntafel's:
   - Anthropic: <https://www.anthropic.com/legal/privacy>
   - OpenAI: <https://openai.com/policies/privacy-policy>
@@ -25,7 +26,7 @@ Mark Friedrichs is the sole developer and responsible party (data controller und
 
 ## Telemetry and analytics
 
-Lerntafel does not collect usage statistics, crash reports or analytics, and does not phone home to the developer. <!-- TODO: confirm this is still true right before release; update here immediately if that changes in any version -->
+Lerntafel does not collect usage statistics, crash reports or analytics, and does not phone home to the developer. The update check (see above) only reads GitHub's public release list; it reports nothing back. <!-- Checked for 0.9.6 (update check added). Update here immediately if that changes in any version. -->
 
 ## Children's privacy
 

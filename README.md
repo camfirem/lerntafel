@@ -1,15 +1,34 @@
-# Lerntafel
+<p align="center">
+  <img src="assets/icon.png" alt="Lerntafel app icon" width="128">
+</p>
 
-**An infinite whiteboard for Windows with pen support and an AI tutor that draws along with you.**
+<h1 align="center">Lerntafel</h1>
 
-Lerntafel is built for maths and electrical-engineering tutoring, but works for any subject where you think with a pen. Write, sketch and annotate PDFs on an endless canvas, then ask the built-in AI chat to look at your board, explain a step, correct an error or write the next line of a calculation right onto the board.
+<p align="center">
+  <b>An infinite whiteboard for Windows with pen support — and an AI that draws along with you, right on the board.</b>
+</p>
+
+<p align="center">
+  <a href="../../releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/camfirem/lerntafel?include_prereleases&label=release"></a>
+  <a href="../../releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/camfirem/lerntafel/total?label=downloads"></a>
+  <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%2010%2F11-blue">
+  <img alt="License" src="https://img.shields.io/badge/license-proprietary%20beta-lightgrey">
+</p>
+
+Most whiteboard apps put the AI in a chat panel beside the board. Lerntafel's AI **writes and draws on the board itself** — the next line of a calculation, a corrected step, a labelled circuit diagram — the same way a tutor would with a pen. Built for maths and electrical-engineering work, but works for any subject you'd normally explain with a pen.
 
 > **Status: public beta (v0.9.x).** Expect rough edges. Feedback is very welcome, see [Feedback](#feedback).
 > **Source code is not published.** This repository contains the documentation and the release downloads only.
 
-<!-- TODO: add screenshots or a short GIF here (docs/screenshots/) -->
+## See it in action
+
+![Lerntafel: asking the AI to solve a right-triangle task, it writes the solution onto the board](assets/preview.gif)
+
+*A right triangle on the board, one question in the chat — the AI writes the formula and the solution straight onto the board. ([▶ Replay](assets/preview.gif) · [Full-quality video](assets/preview.mp4))*
 
 ## Download
+
+<a href="../../releases/latest"><img alt="Download for Windows" src="https://img.shields.io/badge/Download-Lerntafel%20for%20Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white"></a>
 
 Get the latest installer from the [**Releases**](../../releases/latest) page and run `Lerntafel-Setup-<version>.exe`.
 
@@ -22,13 +41,16 @@ Get the latest installer from the [**Releases**](../../releases/latest) page and
 - Endless canvas with smooth pan and zoom (mouse wheel, two-finger touch)
 - Pen input via Windows Ink: pressure, tilt, eraser end, side button, palm rejection
 - Pen, highlighter, shapes, ruler, "hold to snap to a straight line"
-- Select, move, scale, rotate and duplicate strokes and text (lasso or pen side button)
+- Select, move, scale, rotate and duplicate strokes and text (lasso or pen side button) — also with a finger
 - Text tool with on-board editing
 - Grid, lined and dotted backgrounds; light and dark theme
+- Page mode: A4 sheets that scroll like a document, with print-ready PDF export
+- Keyboard shortcuts like in other drawing apps (press F1 in the app for the full list)
 - Multiple boards in tabs, a start page with board previews, save and open boards locally
 
 **PDF**
 - Open a PDF and write on it, page by page
+- Split screen: the PDF on one side, your notes or a free board on the other
 - Export your annotated boards
 
 **AI chat (optional)**
@@ -51,7 +73,8 @@ Get the latest installer from the [**Releases**](../../releases/latest) page and
 ## Privacy
 
 - Boards, settings and chat history are stored **locally** on your computer.
-- Lerntafel has **no account, no telemetry and no analytics**.<!-- TODO: confirm before release -->
+- Lerntafel has **no account, no telemetry and no analytics**.<!-- Confirmed for 0.9.6: the only network call of its own is the update check below. -->
+- Since 0.9.6, Lerntafel checks this repository's public release list at most once a day to tell you about new versions. Nothing about you or your boards is sent; GitHub sees an ordinary web request (see [PRIVACY.md](PRIVACY.md)).
 - If you use the AI chat with a cloud provider, the visible board image, your message and the chat context are sent to **that provider** using **your** API key. Their terms and privacy policy apply. With a local Ollama model nothing leaves your machine.
 - API keys are stored on your computer only.
 - Full details: [PRIVACY.md](PRIVACY.md).
@@ -79,8 +102,7 @@ Third-party components and their licenses are listed in [THIRD-PARTY-NOTICES.md]
 - Found a bug or have an idea? [Open an issue](../../issues/new/choose).
 - Please include your Windows version, the Lerntafel version you installed and, if possible, steps to reproduce.
 - Found a security issue? Please see [SECURITY.md](SECURITY.md) instead of opening a public issue.
-- Interested in contributing? See [CONTRIBUTING.md](CONTRIBUTING.md) — pull requests aren't accepted, but issues and feedback are very welcome.
-- This repository doesn't take pull requests (see [CONTRIBUTING.md](CONTRIBUTING.md)) — the source code is not published, see [License](#license).
+- Interested in contributing? See [CONTRIBUTING.md](CONTRIBUTING.md) — pull requests aren't accepted (source isn't published, see [License](#license)), but issues and feedback are very welcome.
 
 ## Disclaimer
 
