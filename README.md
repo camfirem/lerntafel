@@ -20,6 +20,12 @@ Most whiteboard apps put the AI in a chat panel beside the board. Lerntafel's AI
 > **Status: public beta (v0.9.x).** Expect rough edges. Feedback is very welcome, see [Feedback](#feedback).
 > **Source code is not published.** This repository contains the documentation and the release downloads only.
 
+## Watch the trailer
+
+<a href="assets/promo.mp4"><img src="assets/promo-poster.png" alt="Lerntafel trailer — click to play the video (36 s)" width="720"></a>
+
+*36 seconds: pen, infinite board, PDFs and an AI that writes the answer straight onto the board. ([▶ Play video](assets/promo.mp4))*
+
 ## See it in action
 
 ![Lerntafel: asking the AI to solve a right-triangle task, it writes the solution onto the board](assets/preview.gif)
